@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background-color: rgb(214, 219, 249);
+      }
+      .head {
+        background-color: rgb(150, 150, 255);
+        color: rgb(30, 32, 32);
+
+        text-align: center;
+        padding: 7px;
+      }
+
+      h1 {
+        padding-top: 50px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+      }
+      .part1 {
+        border: 1px solid black;
+        color: rgb(246, 244, 242);
+        padding: 100px 25px 100px 25px;
+        background-color: rgba(24, 23, 23, 0.76);
+        text-align: center;
+        justify-content: center;
+      }
+      .part2 {
+        border: 1px solid black;
+        padding: 100px 50px 100px 50px;
+        background-color: rgba(255, 255, 255, 0.76);
+        /* text-align: center; */
+        /* justify-content: center; */
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form {
+        display: inline;
+        color: rgb(1, 1, 1);
+        padding: 15px;
+      }
+      radio{
+
+        cursor: pointer;
+      }
+      button {
+        padding: 5px;
+        margin: 15px;
+        display: block;
+        border-radius: 20px;
+        width: 100px;
+        color: antiquewhite;
+        cursor: pointer;
+        background-color: rgb(20, 19, 19);
+      }
+
+      button:hover {
+        color: black;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head">Vineethreddy.com</h1>
+    <div class="main">
+      <div class="part1">
+        <h1>welcome to vineethreddy.com</h1>
+        <h2>Dive into my world by registering yourself</h2>
+      </div>
+
+      <div class="part2">
+        <form action="file.php" method="get">
+          <div class="box">
+            <label for="name">
+              <i class="fa-solid fa-user"></i> &nbspFull Name:
+            </label>
+            <input type="text" name="name" id="name" />
+
+            <label for="email">
+              <i aria-hidden="true" class="fa fa-envelope"> </i> &nbsp; Email:
+            </label>
+            <input class="input" type="email" name="email" id="email" />
+            <label for="mobile">
+              <i class="fa-solid fa-address-book"></i> &nbsp Contact No:
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+             
+            />
+            <label for="password"> <i class="fa-solid fa-key"></i> &nbsp; password: </label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+            />
+            <label for="dob"><i class="fa-solid fa-cake-candles"></i> &nbsp; Birthday: </label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+
+          <input type="radio"
+          name="agree" 
+          value="yes">Male
+   
+   <input type="radio"
+          name="agree" 
+          value="no">Female
+          <br />
+          <input type="checkbox" id="cb2" />
+          <label for="cb2">I Agree to terms and conditions </label>
+          <br />
+          <input type="checkbox" id="cb2" />
+          <label for="cb2">I want to receive the newsletter</label>
+
+          <button type="submit">Register</button>
+          <p>Already a Member !! <a href="#">Signin</a></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
